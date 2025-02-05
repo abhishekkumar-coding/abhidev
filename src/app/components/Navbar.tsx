@@ -20,6 +20,7 @@ const Navbar : React.FC<IPROPS> = ({toggle}) =>{
                         <li className='customBorder cursor-pointer'>About </li>
                         <li className='customBorder cursor-pointer'>Services </li>
                         <li className='customBorder cursor-pointer'>Projects </li>
+                        <li className='customBorder cursor-pointer'>Contact Us </li>
                     </ul>
                     <button className='py-2 px-3 md:ml-10 bg-white hover:bg-gray-200 transition-all duration-200 text-[#1E40AF] font-semibold text-xl rounded-lg'>Hire Me</button>
                 </div>

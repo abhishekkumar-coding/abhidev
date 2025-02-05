@@ -19,6 +19,7 @@ const SideBar: React.FC<IPROPS> = ({toggle, sideState}) => {
                 <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>About</li>
                 <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Services</li>
                 <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Projects</li>
+                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Contact Us</li>
             </ul>
             <button onClick={toggle} className='text-4xl text-white hover:text-gray-400'><FontAwesomeIcon icon={faXmark} /></button>
         </div>

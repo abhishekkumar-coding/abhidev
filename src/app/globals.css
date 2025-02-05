@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.customBorder {
+    position: relative; /* Required for positioning the pseudo-element */
+    display: inline-block; /* Ensures the border aligns with the text width */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.customBorder::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+    width: 0; 
+    height: 2px; 
+    background-color: orange;
+    transition: width 0.2s ease-in-out;
+    transform-origin: left;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.customBorder:hover::after {
+    width: 100%;
 }

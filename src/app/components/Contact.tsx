@@ -1,48 +1,14 @@
 import { faEnvelope, faMap, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useForm } from '@formspree/react';
 
 import React from 'react'
 
 function Contact() {
-    const [state, handleSubmit] = useForm("xyzkpgjd");
-    if (state.succeeded) {
-        return (
-            <div className="flex items-center justify-center min-h-screen bg-green-50">
-                <div className="bg-white shadow-xl rounded-lg p-6 md:p-10 border border-green-300 text-center max-w-sm">
-                    <svg
-                        className="w-16 h-16 mx-auto text-green-500 animate-bounce"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                        />
-                    </svg>
-
-                    <h2 className="text-2xl font-bold text-green-700 mt-4">Thank You!</h2>
-                    <p className="text-gray-600 mt-2">Your submission has been received.</p>
-
-                    <button
-                        onClick={() => window.location.reload()} // Reloads the form
-                        className="mt-4 w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-300"
-                    >
-                        Submit Another Response
-                    </button>
-                </div>
-            </div>
-        );
-    }
 
     return (
-        <div className='w-full bg-[#050709] py-10'>
+        <div id='contact' className='w-full  bg-[#050709] py-10'>
             <div className='max-w-6xl flex flex-col gap-14 md:gap-0 md:flex-row  items-center justify-evenly mx-auto px-2 md:px-0'>
-                <form action="" onSubmit={handleSubmit} className='bg-[#140C1C] rounded-md max-w-lg box-border p-8'>
+                <form action=""  className='bg-[#140C1C] rounded-md max-w-lg box-border p-8'>
                     <div className='w-full mb-4'>
                         <h1 className='text-3xl font-bold my-2 bg-gradient-to-r text-transparent bg-clip-text from-[#1E40AF] to-[#D1D5DB]'>Let&#39;s Connect</h1>
                         <p className='text-base text-[#D1D5DB]'>Have a project in mind or just want to say hello? Fill out the form below, and I&#39;ll get back to you as soon as possible!</p>
@@ -78,7 +44,7 @@ function Contact() {
                             <textarea name="Message" id="Message" placeholder='Message' className='p-2 text-white  col-span-2 w-full box-border rounded bg-[#050709]' rows={4}></textarea>
                         </div>
                     </div>
-                    <button type="submit" disabled={state.submitting} className='bg-[#1E40AF] py-2 px-6 my-4 rounded-md text-[#D1D5DB] text-xl hover:bg-[#1E3A8A] transition-all duration-200'>
+                    <button type="submit"  className='bg-[#1E40AF] py-2 px-6 my-4 rounded-md text-[#D1D5DB] text-xl hover:bg-[#1E3A8A] transition-all duration-200'>
                         Submit
                     </button>
                 </form>

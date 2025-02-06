@@ -16,7 +16,7 @@ function Projects() {
   ];
 
   return (
-    <div className="w-full py-10 overflow-hidden">
+    <div id="project" className="w-full py-10 overflow-hidden">
       <h1 className="bg-[#1E40AF] w-56 text-3xl font-semibold text-white text-center py-3 mx-auto mb-20 mt-10 transform -rotate-12">
         My Projects
       </h1>

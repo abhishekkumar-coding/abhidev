@@ -55,7 +55,7 @@ function Skills() {
     ];
 
     return (
-        <div className="w-full bg-black py-4 md:py-10">
+        <div id='skills' className="w-full bg-black py-4 md:py-10">
             <h1 className='bg-[#1E40AF] w-44 text-3xl font-semibold text-white text-center py-3 mx-auto mb-20 mt-10 transform -rotate-12'>My Skills</h1>
             <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center max-sm:px-5 sm:px-0 gap-10">
                 {data.map((item, index) => (

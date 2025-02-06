@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className='w-full'>
+    <div id='home' className='w-full'>
       <div className='max-w-6xl py-40 md:py-0 flex flex-col justify-center items-center gap-4 mx-auto md:h-screen'>
         <h1 className='text-3xl md:text-5xl text-[#D1D5DB] tracking-wider font-extrabold text-left max-w-full'>I am Abhishek</h1>
         <h1 className='text-[7vw] md:text-[80px] font-semibold bg-gradient-to-r text-transparent bg-clip-text from-[#1E40AF] to-[#D1D5DB]'>Full Stack Web Developer</h1>

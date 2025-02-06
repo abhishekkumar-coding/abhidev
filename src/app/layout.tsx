@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} ${font.className} bg-[#0F0715] overflow-x-hidden antialiased`}
+        className={`${font.className} ${font.className} scroll-smooth bg-[#0F0715] overflow-x-hidden antialiased`}
       >
         {children}
       </body>

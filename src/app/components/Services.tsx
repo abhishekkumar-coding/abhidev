@@ -52,7 +52,7 @@ function Services() {
         },
     ];
     return (
-        <div className="w-full bg-black py-10">
+        <div id='service' className="w-full bg-black py-10">
             <h1 className='bg-[#1E40AF] w-44 text-3xl font-semibold text-white text-center py-3 mx-auto mb-20 mt-10 transform -rotate-12'>Services</h1>
             <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center px-8 md:px-0 md:grid grid-cols-4 gap-6">
                 {data.map((item, index) => (

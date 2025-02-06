@@ -15,11 +15,11 @@ const SideBar: React.FC<IPROPS> = ({toggle, sideState}) => {
             } z-50 p-4 rounded bg-[#050709] bg-opacity-95 flex justify-between items-start`}
         >
             <ul className='flex flex-col space-y-5 text-3xl items-start text-white'>
-                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Home</li>
-                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>About</li>
-                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Services</li>
-                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Projects</li>
-                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'>Contact Us</li>
+                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'><a href="#home">Home</a></li>
+                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'><a href="#skills">Skills </a></li>
+                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'><a href="#project">Projects</a></li>
+                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'><a href="#service">Services</a> </li>
+                <li className='customBorder cursor-pointer transition-all duration-100 hover:text-gray-400'><a href="#about">About </a></li>
             </ul>
             <button onClick={toggle} className='text-4xl text-white hover:text-gray-400'><FontAwesomeIcon icon={faXmark} /></button>
         </div>

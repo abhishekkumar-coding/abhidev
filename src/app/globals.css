@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+    scroll-behavior: smooth;
+}
 .customBorder {
     position: relative; /* Required for positioning the pseudo-element */
     display: inline-block; /* Ensures the border aligns with the text width */

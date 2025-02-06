@@ -10,9 +10,9 @@ interface IPROPS{
 
 const Navbar : React.FC<IPROPS> = ({toggle}) =>{
     return (
-        <div className='w-full sticky top-0 z-50 bg-[#26093d]'>
+        <div className='w-full px-2 md:px-0 sticky top-0 z-50 bg-[#26093d]'>
             <div className='mx-auto max-w-6xl py-3 flex justify-between items-center'>
-                <h1 className='text-white text-4xl font-semibold py-2 cursor-pointer'>AbhiDev</h1>
+                <h1 className='text-white text-4xl font-semibold py-2 cursor-pointer'><a href="#home">AbhiDev</a></h1>
                <div className='flex items-center gap-3' > 
                 <div className='flex items-center justify-center'>
                     <ul className='hidden md:flex space-x-10 text-xl items-center text-white'>

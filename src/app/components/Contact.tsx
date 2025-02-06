@@ -8,7 +8,7 @@ function Contact() {
     const [state, handleSubmit] = useForm("xyzkpgjd");
     if (state.succeeded) {
         return (
-            <div id='contact' className="flex items-center justify-center min-h-screen bg-green-50">
+            <div className="flex items-center justify-center min-h-screen bg-green-50">
                 <div className="bg-white shadow-xl rounded-lg p-6 md:p-10 border border-green-300 text-center max-w-sm">
                     <svg
                         className="w-16 h-16 mx-auto text-green-500 animate-bounce"
@@ -40,7 +40,7 @@ function Contact() {
     }
 
     return (
-        <div className='w-full bg-[#050709] py-10'>
+        <div id='contact' className='w-full bg-[#050709] py-10'>
             <div className='max-w-6xl flex flex-col gap-14 md:gap-0 md:flex-row  items-center justify-evenly mx-auto px-2 md:px-0'>
                 <form action="" onSubmit={handleSubmit} className='bg-[#140C1C] rounded-md max-w-lg box-border p-8'>
                     <div className='w-full mb-4'>

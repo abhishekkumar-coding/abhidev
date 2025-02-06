@@ -11,7 +11,7 @@ interface IPROPS{
 
 const SideBar: React.FC<IPROPS> = ({toggle, sideState}) => {
     return (
-        <div className={`w-[80%] h-screen md:hidden absolute transition-all duration-200 top-0 ${sideState ? "left-0" : "-left-96"
+        <div className={`w-[80%] h-screen md:hidden fixed top-0 transition-all duration-200 ${sideState ? "left-0" : "-left-96"
             } z-50 p-4 rounded bg-[#050709] bg-opacity-95 flex justify-between items-start`}
         >
             <ul className='flex flex-col space-y-5 text-3xl items-start text-white'>

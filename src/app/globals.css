@@ -2,25 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
-}
-.customBorder {
-    position: relative; /* Required for positioning the pseudo-element */
-    display: inline-block; /* Ensures the border aligns with the text width */
+@layer components {
+    .customBorder {
+        @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ffa500] after:text-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right hover:after:origin-left;
+    }
 }
 
-.customBorder::after {
+html {
+    scroll-behavior: smooth;
+}
+
+/* .customBorder {
+    position: relative; 
+    display: inline-block;
+} */
+
+/* .customBorder::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;  
     width: 0; 
     height: 2px; 
-    background-color: orange;
+    background-color: #ffa500;
     transition: width 0.2s ease-in-out;
     transform-origin: left;
-}
+} */
 
 .customBorder:hover::after {
     width: 100%;
